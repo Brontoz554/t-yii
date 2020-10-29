@@ -167,6 +167,7 @@ class SiteController extends Controller
 
             $response = $client->createRequest()
                 ->setMethod('post')
+                ->setFormat(Client::FORMAT_JSON)
                 ->setUrl('https://gambling.test.i-link.pro/api/v1/user')
                 ->setHeaders([
                     'date-time' => $time,
